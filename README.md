@@ -58,3 +58,89 @@ Si vous connaissez un nouvel horaire ou une nouvelle coordonnée, vous pouvez pr
 > ⚠️ **Les coordonnées et horaires sont fournis par la communauté et peuvent changer lors d'une nouvelle rotation des dragons.**
 
 **Dernière mise à jour :** à compléter
+
+
+# Desert Prince Coordinates
+
+This repository contains the known coordinates of the **Desert Prince** in **World → United Arab Emirates**.
+
+## Coordinates
+
+The following coordinates have been found and sorted by the **closest arrival time**, starting from **15H12 today**.
+
+| Rang | Coordonnée | Heure                 |
+| ---: | :--------: | :-------------------- |
+|    1 |  `711:594` | **16H08 aujourd'hui** |
+|    2 |  `692:653` | **16H09 aujourd'hui** |
+|    3 |  `653:653` | **16H10 aujourd'hui** |
+|    4 |  `692:692` | **16H11 aujourd'hui** |
+|    5 |  `614:653` | **16H56 aujourd'hui** |
+|    6 |  `672:672` | **16H56 aujourd'hui** |
+|    7 |  `633:672` | **16H57 aujourd'hui** |
+|    8 |  `692:614` | **16H59 aujourd'hui** |
+|    9 |  `633:633` | **17H00 aujourd'hui** |
+|   10 |  `594:711` | **17H14 aujourd'hui** |
+|   11 |  `575:614` | **20H18 aujourd'hui** |
+|   12 |  `594:594` | **20H18 aujourd'hui** |
+|   13 |  `653:692` | **23H31 aujourd'hui** |
+|   14 |  `672:594` | **00H03 demain**      |
+|   15 |  `672:711` | **00H19 demain**      |
+|   16 |  `594:633` | **00H20 demain**      |
+|   17 |  `614:614` | **00H20 demain**      |
+|   18 |  `614:575` | **00H23 demain**      |
+|   19 |  `575:575` | **00H25 demain**      |
+|   20 |  `614:692` | **00H33 demain**      |
+|   21 |  `575:653` | **02H58 demain**      |
+|   22 |  `711:633` | **03H44 demain**      |
+|   23 |  `633:594` | **05H35 demain**      |
+|   24 |  `711:672` | **06H54 demain**      |
+|   25 |  `672:633` | **07H34 demain**      |
+|   26 |  `594:672` | **08H02 demain**      |
+|   27 |  `575:692` | **09H03 demain**      |
+|   28 |  `653:575` | **09H31 demain**      |
+|   29 |  `633:711` | **10H27 demain**      |
+|   30 |  `692:575` | **10H29 demain**      |
+|   31 |  `653:614` | **12H49 demain**      |
+
+## Coordinate Format
+
+Coordinates are represented as:
+
+```text
+X:Y
+```
+
+Example:
+
+```text
+653:653
+```
+
+Where:
+
+* **X** = horizontal coordinate.
+* **Y** = vertical coordinate.
+
+## Location
+
+```text
+World → United Arab Emirates
+```
+
+## Legend
+
+* `✅` **Desert Prince found**
+* `⬜` **Desert Prince not found**
+
+## Notes
+
+* **31 coordinates** have been found.
+* The list is ordered chronologically by arrival time.
+* `692:V` from the original data was corrected to **`692:653`**.
+* Times marked **today** refer to the current day.
+* Times marked **tomorrow** refer to the following day.
+
+## Contributing
+
+If you find a missing or incorrect coordinate, feel free to open an issue or submit a pull request.
+
