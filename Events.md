@@ -1,4 +1,4 @@
-# Tableau de Présence des Événements (Août 2025)
+# Tableau de Présence des Événements (Août 2026)
 
 | Date  | Samurai | Nomad | Bloodcrow | Realms | Berimond K. | Berimond I. | Bladecoast | Rift Raid | Tournament | Beyond | Outer | Patronage | Nobility |
 | ----- | ------- | ----- | --------- | ------ | ----------- | ----------- | ---------- | --------- | ---------- | ------ | ----- | --------- | -------- |
