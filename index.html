@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <title>Dragon Prince Coordinates</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="eyebrow">WORLD TRACKER</div>
+    <h1>Dragon Prince Coordinates</h1>
+    <p class="subtitle">Fixed coordinates · Shared appearance log</p>
+    <div class="world-row">
+      <label for="worldName">World</label>
+      <input id="worldName" value="United Arab Emirates" readonly>
+      <span id="connection" class="connection offline">Not connected</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="stats" aria-label="Progress">
+      <article class="stat"><span class="stat-label">Found</span><strong id="foundCount">0 / 64</strong></article>
+      <article class="stat"><span class="stat-label">Completion</span><strong id="progressPercent">0%</strong></article>
+      <article class="stat"><span class="stat-label">Last update</span><strong id="lastUpdated">—</strong></article>
+    </section>
+
+    <section class="panel toolbar">
+      <div class="filters">
+        <label for="statusFilter">Show</label>
+        <select id="statusFilter">
+          <option value="all">All coordinates</option>
+          <option value="found">Dragon found</option>
+          <option value="missing">Dragon not found</option>
+        </select>
+        <label for="searchBox">Search</label>
+        <input id="searchBox" type="search" placeholder="e.g. 594:633" autocomplete="off">
+      </div>
+      <div class="actions">
+        <button id="exportBtn" class="primary">Export Markdown</button>
+        <button id="copyBtn">Copy Markdown</button>
+      </div>
+    </section>
+
+    <section class="panel setup" id="setupPanel">
+      <h2>Connect Firebase for live sharing</h2>
+      <p>Paste your Firebase web-app configuration into <code>firebase-config.js</code>, enable Firestore, and publish the site. Until configured, this page runs in local demo mode and changes stay in this browser.</p>
+      <ol>
+        <li>Create a Firebase project and register a Web app.</li>
+        <li>Enable <strong>Cloud Firestore</strong>.</li>
+        <li>Copy the web config into <code>firebase-config.js</code>.</li>
+        <li>Publish the files with GitHub Pages.</li>
+      </ol>
+      <p class="warning">For a public shared tracker, configure Firestore Security Rules and consider Firebase App Check. Do not use open read/write rules in a real deployment.</p>
+    </section>
+
+    <section class="panel table-panel">
+      <div class="table-heading">
+        <div><h2>Coordinate log</h2><p>Coordinates are fixed. Edit the date and status only.</p></div>
+        <span id="visibleCount" class="muted">64 coordinates</span>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr>
+            <th scope="col">Coordinates (fixed)</th>
+            <th scope="col">Status</th>
+            <th scope="col">Appearance Date &amp; Time</th>
+            <th scope="col">Last edited</th>
+          </tr></thead>
+          <tbody id="coordinateRows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel export-panel" id="exportPanel" hidden>
+      <div class="table-heading"><div><h2>Markdown export</h2><p>Copy this text into your README.md.</p></div><button id="closeExport">Close</button></div>
+      <textarea id="markdownOutput" spellcheck="false" aria-label="Markdown export"></textarea>
+    </section>
+  </main>
+
+  <footer>Dragon Prince Coordinates · GitHub Pages + Firebase</footer>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
